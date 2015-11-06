@@ -1,3 +1,11 @@
+/*
+ * Discription:    Demo to detect file system type.
+ * Author:         kangzhiwi@gmail.com
+ * Version:        0.0.1
+ *
+ */
+
+
 #include <sys/statfs.h>
 #include <stdio.h>
 #include <string.h>
@@ -61,8 +69,7 @@ static const char *human_fstype(unsigned int f_type)
 
 static void printf_usage()
 {
-	char* usage = "\nUsage: fmtsd <filepath>\n";
-	printf("%s", usage);
+	printf("\nUsage: fmtck <filepath>\n");
 }
 
 int main(int argc, char** argv)
